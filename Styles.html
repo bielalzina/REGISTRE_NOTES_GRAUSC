@@ -1,0 +1,96 @@
+<style>
+  :root {
+    --bg: #f7f8fb;
+    --card: #ffffff;
+    --text: #1f2a37;
+    --muted: #6b7280;
+    --border: #d1d5db;
+    --primary: #1d4ed8;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  h1,
+  h2 {
+    margin-top: 0;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+
+  button {
+    cursor: pointer;
+    background: var(--primary);
+    color: white;
+    border: none;
+  }
+
+  .actions {
+    margin-top: 12px;
+  }
+
+  .message {
+    min-height: 20px;
+    margin-top: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--border);
+    text-align: left;
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  th {
+    background: #eff6ff;
+  }
+</style>
