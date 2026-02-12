@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registre Notes Graus C</title>
+    <?!= include('Styles'); ?>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Registre Notes Graus C</h1>
+      <p id="welcome" class="muted">Carregant...</p>
+
+      <section class="card">
+        <h2>Alta d'alumne (Etapa 1)</h2>
+        <form id="student-form">
+          <div class="grid">
+            <label>
+              1r llinatge *
+              <input name="llinatge1" required />
+            </label>
+
+            <label>
+              2n llinatge
+              <input name="llinatge2" />
+            </label>
+
+            <label>
+              Nom *
+              <input name="nom" required />
+            </label>
+
+            <label>
+              Tipus document *
+              <select name="tipusDocument" required>
+                <option value="">-- Selecciona --</option>
+                <option value="DNI">DNI</option>
+                <option value="NIE">NIE</option>
+                <option value="PASSAPORT">PASSAPORT</option>
+              </select>
+            </label>
+
+            <label>
+              Número document *
+              <input name="numDocument" required />
+            </label>
+          </div>
+
+          <div class="actions">
+            <button type="submit">Guardar alumne</button>
+          </div>
+        </form>
+
+        <p id="form-message" class="message"></p>
+      </section>
+
+      <section class="card">
+        <h2>Alumnes registrats</h2>
+        <button id="refresh-btn" type="button">Actualitzar llistat</button>
+        <div id="students-table-wrapper"></div>
+      </section>
+    </main>
+
+    <?!= include('Client'); ?>
+  </body>
+</html>
